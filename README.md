@@ -10,6 +10,15 @@ For more details, you can read the following papers:
 * Qt5
 * Boost
 
+## How to build
+
+ASML works under Linux environments. I recommend a so-called out of source build which can be achieved by the following command sequence:
+
+* mkdir build
+* cd build
+* cmake ../
+* make -j<number-of-cores+1>
+
 ## Results
 In order to carry out a quantitative evaluation of the ASLM algorithm, we took into account six well-known segmentation methods, namely JSEG, SRM, KPP, K-means, Otsu, and Level Set. Four different metrics have been selected to calculate the segmentation results: sensitivity, specificity, accuracy, and F-measure. We tested our algorithm on the [PH2 dataset](http://www.fc.up.pt/addi/ph2%20database.html).
 
